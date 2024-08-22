@@ -1,0 +1,83 @@
+html {
+  font-family: "helvetica neue", helvetica, arial, sans-serif;
+}
+
+body {
+  background-color: #17181c;
+}
+
+h1 {
+  text-align: center;
+  color: cornsilk;
+}
+
+table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border: 3px solid cornsilk;
+  background-color: cornsilk;
+}
+
+thead th:nth-child(1) {
+  width: 30%;
+}
+
+thead th:nth-child(2) {
+  width: 40%;
+}
+
+thead th:nth-child(3) {
+  width: 30%;
+}
+
+thead th {
+  font-family: "Rock Salt", cursive;
+  font-size: larger;
+  text-align: left;
+  background-color: indigo;
+  color: cornsilk;
+}
+
+th,
+td {
+  padding: 20px;
+}
+
+th {
+  letter-spacing: 2px;
+}
+
+tr {
+  border-bottom: 1px solid indigo;
+}
+
+tr:nth-child(even) {
+  background-color: rgb(254, 237, 169);
+}
+
+td {
+  letter-spacing: 1px;
+}
+
+.read-more-link {
+  text-decoration: none;
+  font-size: small;
+  color: indigo;
+}
+
+.read-more-link:hover {
+  color: rgb(155, 50, 229);
+}
+
+footer a {
+  display: inline-block;
+  padding: 20px;
+  text-decoration: none;
+  background-color: indigo;
+  color: cornsilk;
+}
+
+footer a:hover {
+  color: rgb(254, 237, 169);
+}
