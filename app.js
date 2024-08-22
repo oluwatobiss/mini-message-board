@@ -15,6 +15,11 @@ app.use(express.urlencoded({ extended: true }));
 app.use("/", indexRouter);
 app.use("/posts", postsRouter);
 
+app.use((err, req, res, next) => {
+  console.error(err);
+  res.status(500).send("Error 500: Encountered an unexpected error");
+});
+
 app.listen(port, () =>
   console.log(`Server listening for requests at port: ${port}!`)
 );
