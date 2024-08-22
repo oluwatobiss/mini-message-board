@@ -1,0 +1,27 @@
+main {
+  box-sizing: border-box;
+  border: 1px solid cornsilk;
+  border-radius: 5px;
+  margin: 30px auto;
+  padding: 50px;
+  width: 50vw;
+  min-height: 90vh;
+}
+
+.date-posted {
+  text-align: center;
+  font-size: small;
+  color: cornsilk;
+}
+
+article {
+  padding-block: 20px;
+}
+
+p {
+  color: #fff;
+}
+
+.return-home-link {
+  border-radius: 4px;
+}
