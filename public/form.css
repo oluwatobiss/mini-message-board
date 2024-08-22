@@ -1,6 +1,11 @@
-form {
-  width: 60vw;
-  margin-inline: auto;
+main {
+  box-sizing: border-box;
+  border: 1px solid cornsilk;
+  border-radius: 5px;
+  margin: 30px auto;
+  padding: 50px;
+  width: 50vw;
+  min-height: 90vh;
 }
 
 label {
