@@ -25,10 +25,8 @@ const getForm = (req, res) =>
 const createPost = (req, res) => {
   const user = req.body.user;
   const text = req.body.text;
-  if (user && text) {
-    messages.push({ text, user, added: new Date() });
-    res.redirect("/");
-  }
+  messages.push({ text, user, added: new Date() });
+  res.redirect("/");
 };
 
 module.exports = { getAllUsersPosts, getForm, createPost };
