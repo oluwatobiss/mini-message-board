@@ -10,7 +10,7 @@
   <body>
     <main>
       <h1><%= user %>'s <%= title %></h1>
-      <div class="date-posted"><%= date %></div>
+      <div class="date-posted"><%= new Date(date).toLocaleDateString() %></div>
       <article>
         <p><%= text %></p>
         <p>
