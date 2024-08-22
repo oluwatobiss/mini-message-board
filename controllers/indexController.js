@@ -17,7 +17,7 @@ const messages = [
 ];
 
 const getAllUsersPosts = (req, res) =>
-  res.render("index", { title: "Mini Messageboard", messages: messages });
+  res.render("index", { title: "Mini Message Board", messages: messages });
 
 const getForm = (req, res) =>
   res.render("form", { title: "New Post", messages: messages });
