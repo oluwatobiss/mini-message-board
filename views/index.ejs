@@ -19,7 +19,15 @@
         <% messages.forEach(message => { %>
         <tr>
           <td><%= message.user %></td>
-          <td><%= message.text %></td>
+          <td>
+            <div><%= message.text %></div>
+            <div>
+              <a
+                href="/posts?user=<%= message.user %>&text=<%= message.text %>&date=<%= message.added %>"
+                >Read more...</a
+              >
+            </div>
+          </td>
           <td><%= message.added %></td>
         </tr>
         <% }) %>

@@ -16,7 +16,7 @@ const messages = [
   },
 ];
 
-const getPosts = (req, res) =>
+const getAllUsersPosts = (req, res) =>
   res.render("index", { title: "Mini Messageboard", messages: messages });
 
 const getForm = (req, res) =>
@@ -31,4 +31,4 @@ const createPost = (req, res) => {
   }
 };
 
-module.exports = { getPosts, getForm, createPost };
+module.exports = { getAllUsersPosts, getForm, createPost };
