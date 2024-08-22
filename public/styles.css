@@ -70,14 +70,14 @@ td {
   color: rgb(155, 50, 229);
 }
 
-footer a {
+.return-home-link {
   display: inline-block;
-  padding: 20px;
+  padding: 14px 20px;
   text-decoration: none;
   background-color: indigo;
   color: cornsilk;
 }
 
-footer a:hover {
+.return-home-linkhover {
   color: rgb(254, 237, 169);
 }
