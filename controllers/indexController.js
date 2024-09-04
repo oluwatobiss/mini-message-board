@@ -1,32 +1,17 @@
-const messages = [
-  {
-    text: "Hi there!",
-    user: "Amando",
-    added: new Date(),
-  },
-  {
-    text: "Hello World!",
-    user: "Charles",
-    added: new Date(),
-  },
-  {
-    text: "Hello Devs!",
-    user: "David",
-    added: new Date(),
-  },
-];
+const db = require("../db/queries");
 
-const getAllUsersPosts = (req, res) =>
-  res.render("index", { title: "Mini Message Board", messages: messages });
+async function getAllUsersPosts(req, res) {
+  const messages = await db.getAllMessages();
+  res.render("index", { title: "Mini Message Board", messages });
+}
 
-const getForm = (req, res) =>
-  res.render("form", { title: "New Post", messages: messages });
+const getForm = (req, res) => res.render("form", { title: "New Post" });
 
-const createPost = (req, res) => {
+async function createPost(req, res) {
   const user = req.body.user;
   const text = req.body.text;
-  messages.push({ text, user, added: new Date() });
+  await db.insertMessage([user, text, new Date()]);
   res.redirect("/");
-};
+}
 
 module.exports = { getAllUsersPosts, getForm, createPost };
