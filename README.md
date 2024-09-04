@@ -12,4 +12,4 @@ A mini message board project used to practice Node.js app development.
 - EJS
 - Koyeb
 - Environment Variables
-- PostgreSQL
+- PostgreSQL (Database)
