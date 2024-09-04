@@ -8,5 +8,8 @@ A mini message board project used to practice Node.js app development.
 - Node events
 - Routing
 - Express
+- Express Validator
 - EJS
 - Koyeb
+- Environment Variables
+- PostgreSQL
