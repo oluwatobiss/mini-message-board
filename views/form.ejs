@@ -10,6 +10,13 @@
   <body>
     <main>
       <h1>Add <%= title %></h1>
+      <% if (locals.errors) {%>
+        <ul>
+          <% errors.forEach(function(error) { %>
+          <li><%= error.msg %></li>
+          <% }) %>
+        </ul>
+      <% } %>
       <form method="POST" action="/new">
         <label for="user">Name</label>
         <input type="text" name="user" id="user" required />
