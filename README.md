@@ -10,6 +10,6 @@ A mini message board project used to practice Node.js app development.
 - Express
 - Express Validator
 - EJS
-- Koyeb
+- Koyeb (App and DB Hosting provider)
 - Environment Variables
 - PostgreSQL (Database)
